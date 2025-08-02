@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Admin/Mlops/house-price-prediction-mlops/mlruns/480688790370800283/164b8a673d194692ad2b3f9b46e20b52/artifacts
+end_time: 1754150878464
+entry_point_name: ''
+experiment_id: '480688790370800283'
+lifecycle_stage: active
+run_id: 164b8a673d194692ad2b3f9b46e20b52
+run_name: LinearRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754150867593
+status: 3
+tags: []
+user_id: Admin

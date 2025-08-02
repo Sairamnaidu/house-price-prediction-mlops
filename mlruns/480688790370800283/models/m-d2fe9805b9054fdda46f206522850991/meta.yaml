@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Admin/Mlops/house-price-prediction-mlops/mlruns/480688790370800283/models/m-d2fe9805b9054fdda46f206522850991/artifacts
+creation_timestamp: 1754150867861
+experiment_id: '480688790370800283'
+last_updated_timestamp: 1754150878427
+model_id: m-d2fe9805b9054fdda46f206522850991
+model_type: null
+name: model
+source_run_id: 164b8a673d194692ad2b3f9b46e20b52
+status: 2
+status_message: null

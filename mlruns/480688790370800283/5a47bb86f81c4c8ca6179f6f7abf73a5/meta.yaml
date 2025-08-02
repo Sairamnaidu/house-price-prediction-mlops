@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Admin/Mlops/house-price-prediction-mlops/mlruns/480688790370800283/5a47bb86f81c4c8ca6179f6f7abf73a5/artifacts
+end_time: 1754150885415
+entry_point_name: ''
+experiment_id: '480688790370800283'
+lifecycle_stage: active
+run_id: 5a47bb86f81c4c8ca6179f6f7abf73a5
+run_name: DecisionTree
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754150878477
+status: 3
+tags: []
+user_id: Admin
