@@ -6,11 +6,11 @@ import pandas as pd
 app = FastAPI(title="Housing Price Prediction API", version="1.0")
 
 # Load model from MLflow Model Registry
-MODEL_NAME = "Decision tree classifier"
-MODEL_VERSION = "1"
-MODEL_URI = f"models:/{MODEL_NAME}/{MODEL_VERSION}"
+# MODEL_NAME = "Decision tree classifier"
+# MODEL_VERSION = "1"
+# MODEL_URI = f"models:/{MODEL_NAME}/{MODEL_VERSION}"
 
-model = mlflow.pyfunc.load_model(MODEL_URI)
+model = mlflow.pyfunc.load_model("mlruns/480688790370800283/models/m-4c4eaa154b62400c87d966daf1b0eebb/artifacts")
 
 @app.get("/")
 def read_root():
