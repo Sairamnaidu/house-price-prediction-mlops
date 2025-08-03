@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from src.schema import PredictRequest
 import mlflow.pyfunc
 import pandas as pd
+from logs.main import logger
 
 app = FastAPI(title="Housing Price Prediction API", version="1.0")
 
@@ -18,8 +19,17 @@ def read_root():
 
 @app.post("/predict")
 def predict(request: PredictRequest):
+    global request_count
+    request_count += 1
+
     input_data = pd.DataFrame([request.dict()])
+    logger.info(f"Received input: {input_data.to_dict(orient='records')}")
 
     prediction = model.predict(input_data)
+    logger.info(f"Prediction result: {prediction.tolist()}")
 
     return {"prediction": prediction.tolist()}
+
+@app.get("/metrics")
+def metrics():
+    return {"total_requests": request_count}
