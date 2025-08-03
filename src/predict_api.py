@@ -13,6 +13,9 @@ app = FastAPI(title="Housing Price Prediction API", version="1.0")
 
 model = mlflow.pyfunc.load_model("mlruns/480688790370800283/models/m-4c4eaa154b62400c87d966daf1b0eebb/artifacts")
 
+
+request_count = 0
+
 @app.get("/")
 def read_root():
     return {"message": "Welcome to Housing Price Prediction API"}
